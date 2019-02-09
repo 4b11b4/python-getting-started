@@ -1,6 +1,6 @@
 from rest_framework import routers
 from django.urls import include, path
-import views
+from .views import GreetingViewSet, UserViewSet
 
 router = routers.DefaultRouter()
 router.register(r'greetings', views.GreetingViewSet()
